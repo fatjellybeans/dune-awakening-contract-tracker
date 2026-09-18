@@ -27,6 +27,24 @@
     "completed": false
   },
   {
+    "id": "atreides-04",
+    "name": "Broken Tools",
+    "faction": "Atreides",
+    "type": "Mentat",
+    "description": "Recover damaged gear and salvage the lost components needed to repair the station inventory.",
+    "reward": "Advanced tools",
+    "completed": false
+  },
+  {
+    "id": "atreides-05",
+    "name": "The Long March",
+    "faction": "Atreides",
+    "type": "Delivery",
+    "description": "Escort vital supplies across contested land while defending against enemy scouts.",
+    "reward": "Supply crate",
+    "completed": false
+  },
+  {
     "id": "harkonnen-01",
     "name": "A Bloody Development",
     "faction": "Harkonnen",
@@ -36,21 +54,39 @@
     "completed": false
   },
   {
-    "id": "fremen-01",
-    "name": "The Spice Rush",
-    "faction": "Fremen",
-    "type": "Chained",
-    "description": "Collect enough spice to support your allies while outrunning trackers in the open desert.",
-    "reward": "Spice haul",
+    "id": "harkonnen-02",
+    "name": "A Golden Opportunity",
+    "faction": "Harkonnen",
+    "type": "Delivery",
+    "description": "Secure a profitable trade route and keep supplies moving before the price collapses.",
+    "reward": "Credit boost",
     "completed": false
   },
   {
-    "id": "story-01",
-    "name": "A Fighting Chance",
-    "faction": "Story",
-    "type": "Trooper",
-    "description": "Fight through an ambush site and secure the landing area for the next chapter of the campaign.",
-    "reward": "Combat token",
+    "id": "harkonnen-03",
+    "name": "Testing the Waters",
+    "faction": "Harkonnen",
+    "type": "Bene Gesserit",
+    "description": "Survey the valley edges and confirm the enemy movement patterns for the next strike.",
+    "reward": "Map data",
+    "completed": false
+  },
+  {
+    "id": "harkonnen-04",
+    "name": "The Price of Power",
+    "faction": "Harkonnen",
+    "type": "Story",
+    "description": "Secure a strategic site and defend it against a coordinated counterattack.",
+    "reward": "Influence points",
+    "completed": false
+  },
+  {
+    "id": "harkonnen-05",
+    "name": "Shifting Sands",
+    "faction": "Harkonnen",
+    "type": "Swordmaster",
+    "description": "Track enemy movement through shifting dunes and uncover hidden trade routes.",
+    "reward": "Rare spice",
     "completed": false
   }
 ]

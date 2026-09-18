@@ -99,7 +99,7 @@ const state = {
   activeType: "all",
   activeFaction: "all",
   completed: {},
-  expandedGroups: new Set(["Atreides", "Harkonnen", "Fremen", "Imperial", "Story"])
+  expandedGroups: new Set(["Atreides", "Harkonnen"])
 };
 
 const storageKey = "duneAwakeningContractTracker";
