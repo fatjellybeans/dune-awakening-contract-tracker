@@ -364,21 +364,23 @@ h1 {
   width: min(260px, 70vw);
   padding: 0.8rem 0.9rem;
   border-radius: 12px;
-  background-color: #1d1815 !important;
-  background-image: none !important;
-  background: #1d1815 !important;
+  background: rgb(29, 24, 21);
+  background-color: rgb(29, 24, 21);
   color: #f7efe2;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
 }
 
 .mission-row:hover .mission-tooltip,
 .mission-row:focus-within .mission-tooltip {
   opacity: 1;
-  background-color: #1d1815 !important;
+  visibility: visible;
+  background: rgb(29, 24, 21);
+  background-color: rgb(29, 24, 21);
 }
 
 .mission-tooltip strong {
