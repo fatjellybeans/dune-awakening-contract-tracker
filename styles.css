@@ -217,7 +217,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 1rem 1.1rem;
+  padding: 0.8rem 0.9rem;
   border-radius: 0;
   border: none;
   background: rgba(249, 234, 197, 0.6);
@@ -226,21 +226,21 @@ h1 {
 }
 
 .group-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .group-summary {
-  font-size: 0.8rem;
-  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.4);
   color: var(--text-muted);
 }
 
 .group-content {
-  padding: 12px;
+  padding: 8px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .group-block.collapsed .group-content {
@@ -251,11 +251,11 @@ h1 {
   position: relative;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 14px;
+  gap: 10px;
   align-items: center;
-  padding: 14px 14px;
+  padding: 10px 12px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(245, 233, 207, 0.45));
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
@@ -312,24 +312,24 @@ h1 {
 .mission-topline {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 .mission-name {
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .mission-pill {
   display: inline-flex;
   align-items: center;
-  padding: 0.25rem 0.6rem;
+  padding: 0.18rem 0.5rem;
   border-radius: 999px;
   background: rgba(219, 183, 122, 0.28);
   color: var(--warning);
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 700;
@@ -337,20 +337,20 @@ h1 {
 
 .mission-subline {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-size: 0.8rem;
+  line-height: 1.3;
 }
 
 .mission-meta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: 180px;
-  padding: 0.45rem 0.7rem;
+  max-width: 140px;
+  padding: 0.35rem 0.55rem;
   border-radius: 999px;
   background: rgba(184, 132, 69, 0.12);
   color: var(--warning);
-  font-size: 0.72rem;
+  font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
