@@ -91,94 +91,6 @@ const missionCatalog = [
     type: "Swordmaster",
     description: "Track enemy movement through shifting dunes and uncover hidden trade routes.",
     reward: "Rare spice"
-  },
-  {
-    id: "fremen-01",
-    name: "The Spice Rush",
-    faction: "Fremen",
-    type: "Chained",
-    description: "Collect enough spice to support your allies while outrunning trackers in the open desert.",
-    reward: "Spice haul"
-  },
-  {
-    id: "fremen-02",
-    name: "Echoes in the Dust",
-    faction: "Fremen",
-    type: "Delivery",
-    description: "Search abandoned camps and recover forgotten caches covered by storms.",
-    reward: "Ration stock"
-  },
-  {
-    id: "fremen-03",
-    name: "Quiet Water",
-    faction: "Fremen",
-    type: "Trooper",
-    description: "Find and secure a reliable water source before the weather turns against you.",
-    reward: "Water reserve"
-  },
-  {
-    id: "fremen-04",
-    name: "Riders of the Wind",
-    faction: "Fremen",
-    type: "Swordmaster",
-    description: "Intercept raiders who are moving through your territory and take back the stolen stock.",
-    reward: "Weapon cache"
-  },
-  {
-    id: "imperial-01",
-    name: "The Imperial Ledger",
-    faction: "Imperial",
-    type: "Story",
-    description: "Recover records from a sealed archive and interpret the missing entries before they disappear.",
-    reward: "Faction intel"
-  },
-  {
-    id: "imperial-02",
-    name: "Sands of Control",
-    faction: "Imperial",
-    type: "Planetologist Regular",
-    description: "Hold a line of observation posts and map the enemy movement patterns across the frontier.",
-    reward: "Scout reports"
-  },
-  {
-    id: "imperial-03",
-    name: "The Last Barrier",
-    faction: "Imperial",
-    type: "Trooper",
-    description: "Repel the assault on the fortified pass and prevent the enemy from advancing deeper.",
-    reward: "Fortification mats"
-  },
-  {
-    id: "story-01",
-    name: "A Fighting Chance",
-    faction: "Story",
-    type: "Trooper",
-    description: "Fight through an ambush site and secure the landing area for the next chapter of the campaign.",
-    reward: "Combat token"
-  },
-  {
-    id: "story-02",
-    name: "A Healing Hand",
-    faction: "Story",
-    type: "Bene Gesserit",
-    description: "Deliver medicine and help keep the camp stable during a sudden crisis.",
-    reward: "Medical supplies"
-  },
-  {
-    id: "story-03",
-    name: "The Road Back",
-    faction: "Story",
-    type: "Delivery",
-    description: "Escort a supply caravan back to safety while surviving rough terrain and scattered hostility.",
-    reward: "Travel permit"
-  },
-  {
-    id: "story-04",
-    name: "Dust and Memory",
-    faction: "Story",
-    type: "Planetologist Regular",
-    description: "Find the missing evidence and confirm the true origin of the strange signals in the desert.",
-    reward: "Archive notes"
   }
 ];
 
@@ -282,7 +194,7 @@ function bindEvents() {
 
 function renderFilters() {
   const typeValues = ["all", ...allowedMissionTypes];
-  const factionValues = ["all", ...new Set(missionCatalog.map((mission) => mission.faction))];
+  const factionValues = ["all", "Atreides", "Harkonnen"];
 
   elements.typeFilters.innerHTML = typeValues
     .map((type) => {
