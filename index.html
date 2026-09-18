@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dune Awakening Contract Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Dune Awakening DB</p>
+          <h1>Dune Awakening Contract Tracker</h1>
+          <p class="credit">Created by: Oblivion on the Stoneheart server</p>
+        </div>
+
+        <div class="toolbar-actions">
+          <div class="view-toggle" aria-label="View mode toggle">
+            <button class="mode-btn active" data-view="grouped">Grouped View</button>
+            <button class="mode-btn" data-view="table">Table View</button>
+          </div>
+
+          <div class="action-buttons">
+            <button id="saveBtn" class="primary-btn">Save JSON</button>
+            <label class="primary-btn file-button">
+              <input id="loadInput" type="file" accept="application/json" />
+              <span>Load JSON</span>
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <section class="filters-panel">
+        <div class="filter-group">
+          <span class="filter-label">Mission Type</span>
+          <div id="typeFilters" class="pill-row"></div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Faction</span>
+          <div id="factionFilters" class="pill-row"></div>
+        </div>
+      </section>
+
+      <section id="summaryBar" class="summary-bar" aria-live="polite"></section>
+
+      <main id="missionsContainer" class="missions-container"></main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

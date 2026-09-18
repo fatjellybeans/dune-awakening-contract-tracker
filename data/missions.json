@@ -1,0 +1,56 @@
+[
+  {
+    "id": "atreides-01",
+    "name": "A Betrayal Within a Betrayal",
+    "faction": "Atreides",
+    "type": "Story",
+    "description": "Investigate who turned on the House and exposed the conspiracy behind the betrayal.",
+    "reward": "House favor",
+    "completed": false
+  },
+  {
+    "id": "atreides-02",
+    "name": "A Center of Learning",
+    "faction": "Atreides",
+    "type": "Exploration",
+    "description": "Scout out a hidden research outpost and recover the materials required for a safe return.",
+    "reward": "Intel cache",
+    "completed": false
+  },
+  {
+    "id": "atreides-03",
+    "name": "A New Cultist",
+    "faction": "Atreides",
+    "type": "Combat",
+    "description": "Take down hostile cultists before they spread chaos through the region.",
+    "reward": "Weapon parts",
+    "completed": false
+  },
+  {
+    "id": "harkonnen-01",
+    "name": "A Bloody Development",
+    "faction": "Harkonnen",
+    "type": "Combat",
+    "description": "Crush rival operatives before they can disrupt your extraction route.",
+    "reward": "Resource cache",
+    "completed": false
+  },
+  {
+    "id": "fremen-01",
+    "name": "The Spice Rush",
+    "faction": "Fremen",
+    "type": "Gathering",
+    "description": "Collect enough spice to support your allies while outrunning trackers in the open desert.",
+    "reward": "Spice haul",
+    "completed": false
+  },
+  {
+    "id": "story-01",
+    "name": "A Fighting Chance",
+    "faction": "Story",
+    "type": "Combat",
+    "description": "Fight through an ambush site and secure the landing area for the next chapter of the campaign.",
+    "reward": "Combat token",
+    "completed": false
+  }
+]
