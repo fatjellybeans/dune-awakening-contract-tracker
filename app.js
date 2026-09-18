@@ -1,9 +1,22 @@
+const allowedMissionTypes = [
+  "Atreides",
+  "Bene Gesserit",
+  "Chained",
+  "Delivery",
+  "Harkonnen",
+  "Mentat",
+  "Planetologist Regular",
+  "Story",
+  "Swordmaster",
+  "Trooper"
+];
+
 const missionCatalog = [
   {
     id: "atreides-01",
     name: "A Betrayal Within a Betrayal",
     faction: "Atreides",
-    type: "Story",
+    type: "Atreides",
     description: "Investigate who turned on the House and exposed the conspiracy behind the betrayal.",
     reward: "House favor"
   },
@@ -11,7 +24,7 @@ const missionCatalog = [
     id: "atreides-02",
     name: "A Center of Learning",
     faction: "Atreides",
-    type: "Exploration",
+    type: "Planetologist Regular",
     description: "Scout out a hidden research outpost and recover the materials required for a safe return.",
     reward: "Intel cache"
   },
@@ -19,7 +32,7 @@ const missionCatalog = [
     id: "atreides-03",
     name: "A New Cultist",
     faction: "Atreides",
-    type: "Combat",
+    type: "Trooper",
     description: "Take down hostile cultists before they spread chaos through the region.",
     reward: "Weapon parts"
   },
@@ -27,7 +40,7 @@ const missionCatalog = [
     id: "atreides-04",
     name: "Broken Tools",
     faction: "Atreides",
-    type: "Crafting",
+    type: "Mentat",
     description: "Recover damaged gear and salvage the lost components needed to repair the station inventory.",
     reward: "Advanced tools"
   },
@@ -35,7 +48,7 @@ const missionCatalog = [
     id: "atreides-05",
     name: "The Long March",
     faction: "Atreides",
-    type: "Travel",
+    type: "Delivery",
     description: "Escort vital supplies across contested land while defending against enemy scouts.",
     reward: "Supply crate"
   },
@@ -43,7 +56,7 @@ const missionCatalog = [
     id: "harkonnen-01",
     name: "A Bloody Development",
     faction: "Harkonnen",
-    type: "Combat",
+    type: "Harkonnen",
     description: "Crush rival operatives before they can disrupt your extraction route.",
     reward: "Resource cache"
   },
@@ -51,7 +64,7 @@ const missionCatalog = [
     id: "harkonnen-02",
     name: "A Golden Opportunity",
     faction: "Harkonnen",
-    type: "Economy",
+    type: "Delivery",
     description: "Secure a profitable trade route and keep supplies moving before the price collapses.",
     reward: "Credit boost"
   },
@@ -59,7 +72,7 @@ const missionCatalog = [
     id: "harkonnen-03",
     name: "Testing the Waters",
     faction: "Harkonnen",
-    type: "Recon",
+    type: "Bene Gesserit",
     description: "Survey the valley edges and confirm the enemy movement patterns for the next strike.",
     reward: "Map data"
   },
@@ -75,7 +88,7 @@ const missionCatalog = [
     id: "harkonnen-05",
     name: "Shifting Sands",
     faction: "Harkonnen",
-    type: "Exploration",
+    type: "Swordmaster",
     description: "Track enemy movement through shifting dunes and uncover hidden trade routes.",
     reward: "Rare spice"
   },
@@ -83,7 +96,7 @@ const missionCatalog = [
     id: "fremen-01",
     name: "The Spice Rush",
     faction: "Fremen",
-    type: "Gathering",
+    type: "Chained",
     description: "Collect enough spice to support your allies while outrunning trackers in the open desert.",
     reward: "Spice haul"
   },
@@ -91,7 +104,7 @@ const missionCatalog = [
     id: "fremen-02",
     name: "Echoes in the Dust",
     faction: "Fremen",
-    type: "Exploration",
+    type: "Delivery",
     description: "Search abandoned camps and recover forgotten caches covered by storms.",
     reward: "Ration stock"
   },
@@ -99,7 +112,7 @@ const missionCatalog = [
     id: "fremen-03",
     name: "Quiet Water",
     faction: "Fremen",
-    type: "Survival",
+    type: "Trooper",
     description: "Find and secure a reliable water source before the weather turns against you.",
     reward: "Water reserve"
   },
@@ -107,7 +120,7 @@ const missionCatalog = [
     id: "fremen-04",
     name: "Riders of the Wind",
     faction: "Fremen",
-    type: "Combat",
+    type: "Swordmaster",
     description: "Intercept raiders who are moving through your territory and take back the stolen stock.",
     reward: "Weapon cache"
   },
@@ -123,7 +136,7 @@ const missionCatalog = [
     id: "imperial-02",
     name: "Sands of Control",
     faction: "Imperial",
-    type: "Recon",
+    type: "Planetologist Regular",
     description: "Hold a line of observation posts and map the enemy movement patterns across the frontier.",
     reward: "Scout reports"
   },
@@ -131,7 +144,7 @@ const missionCatalog = [
     id: "imperial-03",
     name: "The Last Barrier",
     faction: "Imperial",
-    type: "Combat",
+    type: "Trooper",
     description: "Repel the assault on the fortified pass and prevent the enemy from advancing deeper.",
     reward: "Fortification mats"
   },
@@ -139,7 +152,7 @@ const missionCatalog = [
     id: "story-01",
     name: "A Fighting Chance",
     faction: "Story",
-    type: "Combat",
+    type: "Trooper",
     description: "Fight through an ambush site and secure the landing area for the next chapter of the campaign.",
     reward: "Combat token"
   },
@@ -147,7 +160,7 @@ const missionCatalog = [
     id: "story-02",
     name: "A Healing Hand",
     faction: "Story",
-    type: "Support",
+    type: "Bene Gesserit",
     description: "Deliver medicine and help keep the camp stable during a sudden crisis.",
     reward: "Medical supplies"
   },
@@ -155,7 +168,7 @@ const missionCatalog = [
     id: "story-03",
     name: "The Road Back",
     faction: "Story",
-    type: "Travel",
+    type: "Delivery",
     description: "Escort a supply caravan back to safety while surviving rough terrain and scattered hostility.",
     reward: "Travel permit"
   },
@@ -163,7 +176,7 @@ const missionCatalog = [
     id: "story-04",
     name: "Dust and Memory",
     faction: "Story",
-    type: "Exploration",
+    type: "Planetologist Regular",
     description: "Find the missing evidence and confirm the true origin of the strange signals in the desert.",
     reward: "Archive notes"
   }
@@ -268,7 +281,7 @@ function bindEvents() {
 }
 
 function renderFilters() {
-  const typeValues = ["all", ...new Set(missionCatalog.map((mission) => mission.type))];
+  const typeValues = ["all", ...allowedMissionTypes];
   const factionValues = ["all", ...new Set(missionCatalog.map((mission) => mission.faction))];
 
   elements.typeFilters.innerHTML = typeValues
