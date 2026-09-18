@@ -364,10 +364,10 @@ h1 {
   width: min(260px, 70vw);
   padding: 0.8rem 0.9rem;
   border-radius: 12px;
-  background: rgba(22, 18, 15, 0.98);
+  background: #1d1815;
   color: #f7efe2;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease;
